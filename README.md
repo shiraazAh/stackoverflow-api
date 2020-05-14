@@ -4,4 +4,4 @@ A simple StackOverFlow API app
 ## Installing
 
 Clone the following repo:
-    * `git clone git@github.com:shiraazAh/udacity-arcade-game.git` or Download
+    * `git@github.com:shiraazAh/stackoverflow-api.git` or Download
