@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>StackOverFlow Advanced API Search - Shiraaz</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="masthead">
+        <h1>What do you want to search?</h1>
+
+        <div class="site-container">
+            <form id="search-form" action="#">
+                <label for="search-param" class="visuallyhidden">What are you interested in today?</label>
+                <!-- All Parameters -->
+                <div>
+                    <label>Search q</label>
+                    <input id="search-param" class="parameter" type="text" name="search-param"
+                        placeholder="Free form text parameter">
+                </div>
+                <div>
+                    <label>Page Size</label>
+                    <input id="pageSize-param" class="parameter" name="pageSize-param"
+                        placeholder="Default = 30, max limit = 100">
+                </div>
+                <div>
+                    <label>Views</label>
+                    <input id="views-param" class="parameter" type="number" name="views-param" placeholder="Views">
+                </div>
+                <div>
+                    <label>User Id</label>
+                    <input id="user-param" class="parameter" type="number" name="user-param" placeholder="User">
+                </div>
+                <div>
+                    <label>Answers</label>
+                    <input id="answers-param" class="parameter" type="number" name="answers-param"
+                        placeholder="Answers">
+                </div>
+                <div>
+                    <label>Body</label>
+                    <input id="body-param" class="parameter" type="text" name="body-param" placeholder="Body">
+                </div>
+                <div>
+                    <label>Title</label>
+                    <input id="title-param" class="parameter" type="text" name="title-param" placeholder="Search question title">
+                </div>
+                <div>
+                    <label>URL</label>
+                    <input id="url-param" class="parameter" type="text" name="url-param" placeholder="Url">
+                </div>
+                <div>
+                    <label>Not Tagged</label>
+                    <input id="nottagged-param" class="parameter" type="text" name="notagged-param"
+                        placeholder="notagged">
+                </div>
+                <div>
+                    <label>Tagged</label>
+                    <input id="tagged-param" class="parameter" type="text" name="tagged-param" placeholder="tagged">
+                </div>
+                <div>
+                    <label>From Date </label>
+                    <input id="fromdate-param" class="parameter" type="date" name="fromdate-param">
+                </div>
+                <div>
+                    <label>To Date </label>
+                    <input id="todate-param" class="parameter" type="date" name="todate-param">
+                </div>
+                <div>
+                    <label>Max</label>
+                    <input id="min-param" class="parameter" type="date" name="min-param">
+                </div>
+                <div>
+                    <label>Min</label>
+                    <input id="max-param" class="parameter" type="date" name="max-param">
+                </div>
+                <div>
+                    <label>Order</label>
+                    <select name="order" class="parameter" id="order-param">
+                        <option>desc</option>
+                        <option>asc</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Sort</label>
+                    <select name="sort-param" class="parameter" id="sort-param">
+                        <option>activity</option>
+                        <option>votes</option>
+                        <option>creation</option>
+                        <option>relevance</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Accepted</label>
+                    <select name="accepted-param" class="parameter" id="accepted-param">
+                        <option></option>
+                        <option>True</option>
+                        <option>False</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Closed</label>
+                    <select name="closed-param" class="parameter" id="closed-param">
+                        <option></option>
+                        <option>True</option>
+                        <option>False</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Migrated</label>
+                    <select name="migrated-param" class="parameter" id="migrated-param">
+                        <option></option>
+                        <option>True</option>
+                        <option>False</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Notice</label>
+                    <select name="notice-param" class="parameter" id="notice-param">
+                        <option></option>
+                        <option>False</option>
+                        <option>True</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Wiki</label>
+                    <select name="wiki-param" class="parameter" id="wiki-param">
+                        <option></option>
+                        <option>True</option>
+                        <option>False</option>
+                    </select>
+                </div>
+                <!-- Submit Button -->
+                <input id="submit-btn" type="submit" value="Submit">
+            </form>
+        </div>
+    </header>
+    <!-- Result and Button Container -->
+    <div class="site-container">
+        <div id="response-container"></div>
+        <div class="pagenumbers" id="pagination"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
